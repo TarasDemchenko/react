@@ -1,4 +1,5 @@
-import { QuizList } from './QuizList';
+import { GlobalStyled } from './GlobalStyled';
+import { QuizList } from './QuizList/QuizList';
 import { SwarchBar } from './SwarchBar';
 import quizItems from './data.json';
 
@@ -7,6 +8,7 @@ export const App = () => {
     <>
       <SwarchBar />
       <QuizList items={quizItems} />
+      <GlobalStyled />
     </>
   );
 };
